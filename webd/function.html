@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+<body>
+    <script>
+        //function... block of code, used or defined to perform specific
+        //types of function
+        //normal function....... :- with para, without para, and with default para.
+
+        //normal (traditional) function without parameters..
+
+        function demo(){
+            console.log("Hello JS");
+        }
+        demo();
+
+        //with parameter function
+
+        function demo1(text){
+            console.log("Hello " + text);
+        }
+        demo1("Shiv");
+
+        function add(a,b){
+            console.log("sum a+b = " + (a+b));
+        }
+        add(10,2);
+
+        // with default parameter
+        
+        // default parameter should added from last while adding
+        function demo2(a, b=10){
+            console.log("a = "+a + ", b = " + b);
+        }
+        demo2(11);
+
+        //sychronous function..... function is strictly sequential according to the sequence of calling it
+        //
+    </script>
+</body>
+</html>

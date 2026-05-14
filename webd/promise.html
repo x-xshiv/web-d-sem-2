@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //a Promise is an object representing the eventual completion (or failure) of an asynchronous operation and its resulting value. It acts as a placeholder for a result that is not yet available but will be in the future, such as data from a network request.
+
+        let myPromise = new Promise(function(resolve,reject){
+            let age=18;
+            if(age>=18){
+                resolve("valid age");
+            }
+            else{
+                reject("wait for next year");
+            }
+        });
+        myPromise
+        .then(msg=>console.log(msg))
+        .catch(error=>console.log(error));
+    </script>
+</body>
+</html>

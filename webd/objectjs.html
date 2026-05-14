@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {
+            name:"Shiv Goyal",
+            age:18,
+            Married:null,
+            address:{
+                state:"UP",
+                city:"Agra",
+                pincode:282005,
+            },
+            education:["10th","12th","ram"]
+            ,degree:"B.Tech",
+            branch:"CSE",
+            year:2025,
+            getInfo:function(){
+                return "my education is :" + student.degree;
+            }
+        };
+        student.getInfo();
+        console.log(student)
+        console.log(student.getInfo());
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Data Value Type in JS</title>
+</head>
+<body>
+    <script>
+        //JS Data Value Types
+        //Primitive - immutable single value data type in JS
+        // String, Number, Boolean, Undefined, Null, BigInt and Symbol
+
+        // String
+        var myName = "Shiv Goyal";
+        console.log(myName);
+
+        //number
+        var myMobile = 1234567890;
+        console.log(myMobile);
+
+        console.log(myName + " mobile number is " + myMobile);
+
+        //boolean
+        var isMarried = false;
+        console.log(myName + " is Married ? " + isMarried);
+
+        //undefined
+        var myEmail;
+        console.log(myEmail);
+        console.log(typeof(myEmail));
+
+        //null
+        var myAddress=null;
+        console.log(myAddress);
+        console.log(typeof(myAddress));
+
+        //Big Int
+        var myNum = BigInt(123456789123456789123456789);
+        console.log(myNum);
+        console.log(typeof(myNum));
+
+        //symbol
+        //unique single
+        var var1=Symbol("Vikas");
+        var var2=Symbol("Vikas");
+        console.log(var1 == var2);
+
+        //reference Type(object) --> mutable in memory and keep the data in key value pair
+        //object {}, function (), array []
+        //object : collection pair of key(properties) and its value
+        //create an object using literal way new keywords
+
+        let myInfo={
+            "Name":"Shiv Goyal",
+            "Age":18,
+            "Branch":"CSE",
+            "Section":23,
+            "isMarried":isMarried,
+            "myEmail":myEmail,
+            "myMobile":myMobile,
+            "myAddress":myAddress,
+        };
+        console.log(myInfo);
+        document.write("Name : " + myInfo.Name + " , " + "Age : " + myInfo.Age);
+        console.log(typeof(myInfo));
+        console.log(myInfo.Name);
+
+        // object length
+        var keys= Object.keys(myInfo);
+        console.log(keys.length);
+        console.log(typeof(keys));
+
+        function cal(){
+            var num1=10;
+            var num2=20;
+            var add=num1+num2;
+            console.log("addition : " + add);
+        }
+        cal();
+
+        //array - collection of ny data types
+        let studentList=["stu1", "stu2", "stu3", "stu4"];
+        console.log(studentList);
+
+        //for different data types
+        let random=["hello",26,false,null,undefined,BigInt(123456789123456789123456789)]
+        console.log(random);
+
+        //to iterate array member
+        for(let i=0; i<studentList.length;i++){
+            console.log(studentList[i] + " ");
+        }
+
+        for(let x in random){
+            console.log(random[x] + " ");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=[4,6,8,10,12,14];
+        //map
+        let square=num.map(n=>n*n);
+        console.log(square);
+
+        //reduce
+        let sum=num.reduce((total,n) => total+n);
+        console.log(sum);
+
+        //filter
+        let sort=num.filter(n=>n>2);
+        console.log(sort);
+
+        //for each
+        num.forEach(n=>console.log(n*2))
+
+        //local storage
+        let myInfo={
+            name:"Shiv Goyal" ,
+            mobile:7251990888 ,
+            age:18 ,
+            class:"CSE-23" ,
+            dob:"26 March 2007",
+            email:"shivgoyal0307@gmail.com",
+        };
+
+        localStorage.setItem('myInfo', JSON.stringify(myInfo));
+
+        //retrieve items
+        let storeData = JSON.parse(localStorage.getItem('myInfo'));
+        console.log(storeData);
+    </script>
+    </body>
+    </html>
